@@ -27,8 +27,9 @@ function typetext(element,text){// type d'ecriture, lettre par lettre
 
 
 // value is the ai generated message
-function reponseai(value){
-  // return `<div class="message" style="color:white"> ${value} </div> `;
+ // return `<div class="message" style="color:white"> ${value} </div> `;
+
+ function reponseai(value){
   return value;
 }
 
@@ -46,7 +47,7 @@ const handlesubmit = async(e) => {
 
   const data = new FormData(form);
   // console.log("forme data"+data);
-  const response = await fetch("https://code-translator.onrender.com/",{// sends
+  const response = await fetch("https://code-translator.onrender.com",{// sends
     method: 'POST',
     headers:{
       'Content-Type':'application/json'
