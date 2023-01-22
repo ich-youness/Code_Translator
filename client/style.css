@@ -74,7 +74,8 @@
     width: 30%;
     word-spacing: 3px;
     /* line-height: 5px; */
-    background-color: rgb(67, 67, 67);
+    background-color: rgb(60, 60, 60);
+    
     padding: 33px;
     font-size: 15px;
 }
@@ -82,7 +83,7 @@
     width: 30%;
     word-spacing: 3px;
     /* line-height: 5px; */
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(67, 67, 67);
     padding: 33px;
     font-size: 15px;
 }
