@@ -62,8 +62,8 @@ const handlesubmit = async(e) => {
   if(response.ok){//response
    
     const datat = await response.json();
-    const da = undefined;
-     da =  datat.bot;
+    var da = undefined;
+     da =  datat.bot.trim();
     // console.log("reponse dyal server "+da);
     reponseai(typetext(reponseid,da));
    
