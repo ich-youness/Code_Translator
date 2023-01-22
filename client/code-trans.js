@@ -30,7 +30,7 @@ function typetext(element,text){// type d'ecriture, lettre par lettre
  // return `<div class="message" style="color:white"> ${value} </div> `;
 
  function reponseai(value){
-  
+
   return value;
 }
 
@@ -63,8 +63,8 @@ const handlesubmit = async(e) => {
   if(response.ok){//response
    
     const datat = await response.json();
-    var da = undefined;
-     da =  datat.bot.trim();
+    
+    const da =  datat.bot.trim();
     // console.log("reponse dyal server "+da);
     reponseai(typetext(reponseid,da));
    
