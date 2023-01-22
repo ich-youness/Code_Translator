@@ -46,7 +46,7 @@ const handlesubmit = async(e) => {
 
   const data = new FormData(form);
   // console.log("forme data"+data);
-  const response = await fetch("http://localhost:5300",{// sends
+  const response = await fetch("https://code-translator.onrender.com/",{// sends
     method: 'POST',
     headers:{
       'Content-Type':'application/json'
