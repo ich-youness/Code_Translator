@@ -20,14 +20,14 @@ app.use(express.json());
 
 app.get('/', async(req, res) => {
     res.status(200).send({
-        message: 'Helloo from my bedroom',
+        message: 'Hellooo from my bedroom',
     })
 });
 
 app.post('/', async(req, res) =>{
     try{
         const prompt = req.body.prompt;// kt9raha
-        // console.log(prompt);
+        console.log(prompt);
 
         const response = await openai.createCompletion({
             model: "text-davinci-003",
@@ -50,7 +50,7 @@ app.post('/', async(req, res) =>{
 
           console.log("3tat rep "+ response.data.choices[0].text);
         
-        // console.log("fef");
+        console.log("fef");
     }catch(error){
         console.log(error);
         res.send({error})
