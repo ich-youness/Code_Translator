@@ -60,7 +60,7 @@ const handlesubmit = async(e) => {
  
 
   if(response.ok){//response
-    var bot = undefined;
+   
     const datat = await response.json();
     const da =  datat.bot.trim();
     // console.log("reponse dyal server "+da);
