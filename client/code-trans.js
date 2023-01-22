@@ -30,6 +30,7 @@ function typetext(element,text){// type d'ecriture, lettre par lettre
  // return `<div class="message" style="color:white"> ${value} </div> `;
 
  function reponseai(value){
+  
   return value;
 }
 
