@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codemaster</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- <script src="https://unpkg.com/express"></script> -->
+   
+   
+
+</head>
+<body>
+    <div id="main">
+        <div class="nav">
+            <img src="bg.png" alt="logo" width="150px" height="100px" >
+            <ul>
+
+                <li><a href="#trans">Home</a> </li>
+                <li><a href="#desc">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
+        <div class="headline">
+            <h2 >Welcome to Codemaster</h2>
+            <h6>Revolutionize Your Coding Experience with our Translator</h6>
+        </div>
+    </div>
+    <div class="desc" id="desc">
+        <div class="how">
+            
+            <h2>How?</h2><br><hr><br>
+            <ul>
+                <li>You would need to select the source programming language and the target programming language they wish to translate the code to.</li><br>
+                <li>You would then need to upload the code they wish to translate or copy and paste the code into the appropriate field on the website.</li><br>
+                <li>You would then need to press the "Translate" button to initiate the translation process.</li><br>
+                <li>Our website would then process the code and translate it to the target language.</li><br>
+                <li>After the translation is completed, you would be able to copy the translated code to their clipboard.</li><br>
+                <li>You can then use the translated code in your project, and review and make changes as necessary.</li><br>
+
+            </ul>
+        </div>
+        <div class="why">
+            <br><br><br><br>
+            <h2>Why?</h2><br><hr><br>
+            <ul>
+                <li>To convert existing code from one programming language to another, which can help to save time and effort when working on a project that requires multiple languages.</li><br>
+                <li>To make it easier to work with legacy code, by converting it to a more modern language that is easier to maintain and update.</li><br>
+                <li>To help developers who are not proficient in a particular language, to work on a project that is written in that language.</li><br>
+                <li>To assist developers in learning a new language, by providing a tool that can convert code to that language, making it easier to understand the syntax and structure.</li><br>
+
+            </ul>
+        </div>
+        
+        <div class="what">
+            <br><br><br><br><br><br><br><br>
+            <h2>What?</h2><br><hr><br>
+            <ul>
+             <li>Our website provides an easy-to-use, accurate, and fast code translation service that supports multiple programming languages. Our service allows users to convert their code from one language to another, making it accessible to everyone, regardless of their proficiency in a particular language. Our goal is to empower developers to take their projects to the next level, by making it easy for them to convert their code to the languages they need.</li>
+                
+            </ul>
+           
+              <!-- <input type="text" id="ab" style="color:red"> -->
+              <!-- <button id="btn" type="submit">clikd</button> test -->
+        </div>
+    </div>
+    <div class="trans" id="trans">
+        <label for="str-lang">Translate from </label>
+        <select id="1" name="" class="str-lang" >
+            <option value="python" >Python </option>
+            <option value="javascript" >Javascript</option>
+            <option value="go" >Go</option>
+            <option value="java" >Java</option>
+            <option value="c#" >C#</option>
+            <option value="c++" >C++</option>
+            <option value="php" >PHP</option>
+        </select>
+        <label for="str-lang"> To </label>
+        <select id="2" name="" class="str-lang" >
+            <option value="javascript" >Javascript </option>
+            <option value="python" >Python</option>
+            <option value="go" >Go</option>
+            <option value="java" >Java</option>
+            <option value="c#" >C#</option>
+            <option value="c++" >C++</option>
+            <option value="php" >PHP</option>
+        </select>
+        <!-- //le code a traduire -->
+        <form >
+            <div id="form"><textarea class="txt-ar" name="prompt" placeholder="type your code..." ></textarea><textarea class="txt-ar" name="result" placeholder="here's your results..." id="xx"></textarea></div> 
+            <br>
+            <button id="btn" type="submit" >translate</button>
+
+        </form>
+        <!-- <div id="repo" style="color: white;"></div> -->
+<!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+    </div>
+
+
+    <div id="footer">
+        <footer>
+            <br>
+            Contact: <a href="youness.ichen@usmba.ac.ma"><i class='bx bxl-gmail' style="font-size: 25px; color: rgb(225, 84, 84);"></i></a>
+            <a href="https://github.com/ich-youness"><i class='bx bxl-github' style="font-size: 25px; color: white;" ></i></a>
+
+
+            <br>
+          </footer>
+    </div>
+    <script type="module" src="code-trans.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</body>
+</html>
